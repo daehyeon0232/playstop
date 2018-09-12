@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>palying</title>
+	<style>
+		#can_a{margin: auto; width:90px; border-radius: 35px; padding: 1px 10px 1px 10px; margin: 10px; opacity: 1; transition: all 1s}
+		#can_g{margin: auto; width:90px; border-radius: 35px; padding: 1px 10px 1px 10px; margin: 10px; opacity: 1; transition: all 1s}
+		#can_gg{margin: auto; width:90px; border-radius: 35px; padding: 1px 10px 1px 10px; margin: 10px; opacity: 1; transition: all 1s}
+		#can_m{margin: auto; width:90px; border-radius: 35px; padding: 1px 10px 1px 10px; margin: 10px; opacity: 1; transition: all 1s}
+		#can_o{margin: auto; width:90px; border-radius: 35px; padding: 1px 10px 1px 10px; margin: 10px; opacity: 1; transition: all 1s}
+		#can_p{margin: auto; width:90px; border-radius: 35px; padding: 1px 10px 1px 10px; margin: 10px; opacity: 1; transition: all 1s}
+		#canbox{margin: auto; background: white; width: 810px; height: 140px; padding: 20px; transition:all 1s}
+		#videobox{margin: auto; width: 0px; transition: all 1s}
+		video{width: 0px; transition: all 1s}
+	</style>
+	
+	</script>
+</head>
+
+<body>
+	<div id="canbox">
+	<img src="./img/apple.png" id="can_a" style= "background: #65ce2e;">
+	<img src="./img/grape.png" id="can_g" style= "background: #813dac;">
+	<img src="./img/green-grape.png" id="can_gg" style= "background: #1a8862;">
+	<img src="./img/mango.png" id="can_m" style= "background: #e0bc32;">
+	<img src="./img/orange.png" id="can_o" style= "background: #e3821d;">
+	<img src="./img/peach.png" id="can_p" style= "background: #d46aa8;">
+	</div>
+	<div id="videobox">
+		<video id="vsource" src="./video/apple.mp4" type="video/mp4">
+  		</video>
+	</div>
+<script>
+	var toggle = "off"
+	can_a.onclick = function(){
+		if(toggle == "off"){
+			toggle = "on"
+			videobox.style.width = "770px";
+			vsource.style.width = "770px";
+			vsource.setAttribute("src","./video/apple.mp4");
+			vsource.play();
+		/*var can = document.getElementById("can_a");
+		can.style.opacity = 0.2;*/
+			can_a.style.opacity = 1;
+			can_g.style.opacity = 0.2;
+			can_gg.style.opacity = 0.2;
+			can_m.style.opacity = 0.2;
+			can_o.style.opacity = 0.2;
+			can_p.style.opacity = 0.2;
+		}else if(toggle == "on"){
+			toggle = "off"
+			videobox.style.width = "0px";
+			vsource.style.width = "0px";
+			vsource.setAttribute("src","./video/apple.mp4");
+			vsource.pause();
+			can_a.style.opacity = 1;
+			can_g.style.opacity = 1;
+			can_gg.style.opacity = 1;
+			can_m.style.opacity = 1;
+			can_o.style.opacity = 1;
+			can_p.style.opacity = 1;
+		}
+	}
+
+	can_g.onclick = function(){
+		if(toggle == "off"){
+			toggle = "on"
+			videobox.style.width = "770px";
+			vsource.style.width = "770px";
+			vsource.setAttribute("src","./video/grape.mp4");
+			vsource.play();
+			can_a.style.opacity = 0.2;
+			can_g.style.opacity = 1;
+			can_gg.style.opacity = 0.2;
+			can_m.style.opacity = 0.2;
+			can_o.style.opacity = 0.2;
+			can_p.style.opacity = 0.2;
+		}else if(toggle == "on"){
+			toggle = "off"
+			videobox.style.width = "0px";
+			vsource.style.width = "0px";
+			vsource.setAttribute("src","./video/grape.mp4");
+			vsource.pause();
+			can_a.style.opacity = 1;
+			can_g.style.opacity = 1;
+			can_gg.style.opacity = 1;
+			can_m.style.opacity = 1;
+			can_o.style.opacity = 1;
+			can_p.style.opacity = 1;
+		}
+	}
+
+	can_gg.onclick = function(){
+		if(toggle == "off"){
+			toggle = "on"
+			videobox.style.width = "770px";
+			vsource.style.width = "770px";
+			vsource.setAttribute("src","./video/green grape.mp4");
+			vsource.play();
+			can_a.style.opacity = 0.2;
+			can_g.style.opacity = 0.2;
+			can_gg.style.opacity = 1;
+			can_m.style.opacity = 0.2;
+			can_o.style.opacity = 0.2;
+			can_p.style.opacity = 0.2;
+		}else if(toggle == "on"){
+			toggle = "off"
+			videobox.style.width = "0px";
+			vsource.style.width = "0px";
+			vsource.setAttribute("src","./video/green grape.mp4");
+			vsource.pause();
+			can_a.style.opacity = 1;
+			can_g.style.opacity = 1;
+			can_gg.style.opacity = 1;
+			can_m.style.opacity = 1;
+			can_o.style.opacity = 1;
+			can_p.style.opacity = 1;
+		}
+	}
+	can_m.onclick = function(){
+		if(toggle == "off"){
+			toggle = "on"
+			videobox.style.width = "770px";
+			vsource.style.width = "770px";
+			vsource.setAttribute("src","./video/mango.mp4");
+			vsource.play();
+			can_a.style.opacity = 0.2;
+			can_g.style.opacity = 0.2;
+			can_gg.style.opacity = 0.2;
+			can_m.style.opacity = 1;
+			can_o.style.opacity = 0.2;
+			can_p.style.opacity = 0.2;
+		}else if(toggle == "on"){
+			toggle = "off"
+			videobox.style.width = "0px";
+			vsource.style.width = "0px";
+			vsource.setAttribute("src","./video/mango.mp4");
+			vsource.pause();
+			can_a.style.opacity = 1;
+			can_g.style.opacity = 1;
+			can_gg.style.opacity = 1;
+			can_m.style.opacity = 1;
+			can_o.style.opacity = 1;
+			can_p.style.opacity = 1;
+		}
+	}
+	can_o.onclick = function(){
+		if(toggle == "off"){
+			toggle = "on"
+			videobox.style.width = "770px";
+			vsource.style.width = "770px";
+			vsource.setAttribute("src","./video/orange.mp4");
+			vsource.play();
+			can_a.style.opacity = 0.2;
+			can_g.style.opacity = 0.2;
+			can_gg.style.opacity = 0.2;
+			can_m.style.opacity = 0.2;
+			can_o.style.opacity = 1;
+			can_p.style.opacity = 0.2;
+		}else if(toggle == "on"){
+			toggle = "off"
+			videobox.style.width = "0px";
+			vsource.style.width = "0px";
+			vsource.setAttribute("src","./video/orange.mp4");
+			vsource.pause();
+			can_a.style.opacity = 1;
+			can_g.style.opacity = 1;
+			can_gg.style.opacity = 1;
+			can_m.style.opacity = 1;
+			can_o.style.opacity = 1;
+			can_p.style.opacity = 1;
+		}
+	}
+	can_p.onclick = function(){
+		if(toggle == "off"){
+			toggle = "on"
+			videobox.style.width = "770px";
+			vsource.style.width = "770px";
+			vsource.setAttribute("src","./video/peach.mp4");
+			vsource.play();
+			can_a.style.opacity = 0.2;
+			can_g.style.opacity = 0.2;
+			can_gg.style.opacity = 0.2;
+			can_m.style.opacity = 0.2;
+			can_o.style.opacity = 0.2;
+			can_p.style.opacity = 1;
+		}else if(toggle == "on"){
+			toggle = "off"
+			videobox.style.width = "0px";
+			vsource.style.width = "0px";
+			vsource.setAttribute("src","./video/peach.mp4");
+			vsource.pause();
+			can_a.style.opacity = 1;
+			can_g.style.opacity = 1;
+			can_gg.style.opacity = 1;
+			can_m.style.opacity = 1;
+			can_o.style.opacity = 1;
+			can_p.style.opacity = 1;
+		}
+	}
+</script>
+</body>
+</html>
